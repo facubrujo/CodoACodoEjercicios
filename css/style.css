@@ -1,0 +1,105 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.container {
+    margin: 0 5em;
+}
+
+.nav, .footer {
+    background-color: orange;
+    color: black;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.a {
+    background-color: #cd611f;
+    margin: 2px;
+    padding: 5px;
+    text-decoration: none;
+    /*transition: all 0.3s ease;
+    border-radius: 25%;*/
+}
+
+.a:hover{
+    background-color: #3d00f7;
+    color: #fff;
+   /* font-size: 20px;*/
+}
+
+.footer {
+    margin-top: 10px;
+    min-height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+}
+
+.p {
+    margin: 3em;
+}
+
+.form-label {
+    margin-top: 1em;
+}
+
+.form-btn {
+    margin-top: 1em;
+
+}
+
+.form-btn:hover {
+    background-color: blue;
+    color: aliceblue;
+}
+
+iframe {
+    width: 300px;
+    height: 255px;
+    border: none;
+}
+
+a .icono {
+    color: black; 
+}
+.icono {
+    font-size: 24px;
+    transition: all 0.3s ease;
+    
+}
+
+.icono:hover {
+    font-size: 36px;
+    
+}
+

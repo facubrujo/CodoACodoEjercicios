@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="body">
+    <header>
+        <nav class="nav">
+            <ul>
+                <a class="a" href="../index.html">Home</a>
+                <a class="a" href="/pages/contact.html">About</a>
+                <a class="a" href="/pages/contact.html">Contact</a>
+                <a class="a" href="/pages/registro.html">Registro</a>
+                <a class="a" href="/pages/sucursales.html">Sucursales</a>
+            </ul>
+
+            <h1 class="h1">La cocina de Juan</h1>
+        </nav>
+
+    </header>
+    <main class="main">
+        <h2>Formulario de registro</h2>
+        <form action="show_data.html" method="">
+
+            <div class="form-label">
+                <label for="firstname">Nombre: </label>
+                <input type="text" name="firstname" placeholder="Ingrese su nombre aqui...">
+            </div>
+            <div class="form-label">
+                <label for="lastname">Apellido: </label>
+                <input type="text" name="lastname" placeholder="Ingrese su nombre aqui...">
+            </div>
+            <div class="form-label">
+                <label for="street">Dirección: </label>
+                <input type="text" name="street" placeholder="Ingrese su nombre aqui...">
+            </div>
+            <div class="form-label">
+                <label for="city">Ciudad: </label>
+                <input type="text" name="city" placeholder="Ingrese su nombre aqui...">
+            </div>
+            <div class="form-label">
+                <label for="zipcode">Código Postal: </label>
+                <input type="text" name="zipcode" placeholder="Ingrese su nombre aqui...">
+            </div>
+            <div class="form-label">
+                <label for="BirthDate">Fecha de Nacimiento: </label>
+                <input type="text" name="BirthDate" placeholder="Ingrese su nombre aqui...">
+            </div>
+
+            <div class="form-label">
+                <input type="radio" name="gender" value="hombre" checked>Hombre
+                <input type="radio" name="gender" value="Mujer">Mujer
+                <input type="radio" name="gender" value="Otro">Otro
+            </div>
+            <div class="form-label">
+                <input type="checkbox" name="estudio" value="primarios">Primarios
+                <input type="checkbox" name="estudio" value="secundarios">Secundarios
+                <input type="checkbox" name="estudio" value="terciarios">Terciarios
+                <input type="checkbox" name="estudio" value="universitarios">Universitarios
+                <input type="checkbox" name="estudio" value="otro">Otro
+            </div>
+            <input class="form-btn" type="submit" value="Enviar">
+            <p>Si usted hace click en el boton "Enviar", la información sera enviada a la pagina "show_data.html".</p>
+
+        </form>
+
+    </main>
+    <footer class="footer">
+        <div>
+            <span><b>Derechos reservados @2020</b></span>
+        </div>
+
+    </footer>
+</body>
+
+</html>
