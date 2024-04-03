@@ -1,0 +1,61 @@
+html, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.sec-01 {
+    margin: 3rem;
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.sec-02 {
+    margin: 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sec-01 div{
+    background-image: url(../images/cocina.jpg);
+    height: 20rem;
+    width: 200rem;
+    background-size: cover;
+    background-position: center;
+}
+.sec-02 div{
+    background-image: url(../images/cocina02.jpg);
+    height: 20rem;
+    width: 200rem;
+    background-size: cover;
+    background-position: center;
+}
+.sec-01 .p , .sec-02 .p{
+    max-width: 40rem;
+}
+
+@media only screen and (max-width: 1720px){
+        /*filas de 3 tarjeta en pantalla*/
+
+    
+}
+
+@media only screen and (max-width: 1280px){
+        /*filas de 2 tarjeta en pantalla*/
+    
+}
+
+@media only screen and (max-width: 800px){
+        /*filas de 1 tarjeta en pantalla*/
+    .sec-01 div, .sec-02 div{
+        display: none;
+    }   
+}

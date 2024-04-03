@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden ;
 }
 
 
@@ -21,9 +22,10 @@ body {
     margin: 0 5em;
 }
 
-.nav, .footer {
+.header, .footer {
     background-color: orange;
     color: black;
+    
 }
 
 .h1 {
@@ -31,33 +33,51 @@ body {
 }
 
 .nav {
+    height: 50px;
+    margin: auto;
+    width: 70%;
+    height: 50px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: larger;
+   
 }
 
 .a {
-    background-color: #cd611f;
+    /*background-color: #cd611f;*/
+    
     margin: 2px;
     padding: 5px;
     text-decoration: none;
-    /*transition: all 0.3s ease;
-    border-radius: 25%;*/
+    font-weight: bold;
+    transition: all 0.3s ease;
+    /*border-radius: 25%;*/
+    
 }
 
 .a:hover{
-    background-color: #3d00f7;
+    /*background-color: #3d00f7;*/
     color: #fff;
-   /* font-size: 20px;*/
+    font-size: 20px;
+    text-shadow: 1rem .5rem 5px black;
 }
 
 .footer {
+    height: 5rem;
     margin-top: 10px;
     min-height: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .sections {
@@ -69,25 +89,7 @@ body {
     margin: 3em;
 }
 
-.form-label {
-    margin-top: 1em;
-}
 
-.form-btn {
-    margin-top: 1em;
-
-}
-
-.form-btn:hover {
-    background-color: blue;
-    color: aliceblue;
-}
-
-iframe {
-    width: 300px;
-    height: 255px;
-    border: none;
-}
 
 a .icono {
     color: black; 
@@ -102,4 +104,102 @@ a .icono {
     font-size: 36px;
     
 }
+/*------------ CONTACTO ---------------------*/
+.contacto{
+    text-align: center;
+}
+/*------------ FORMULARIO REGISTRO ------------------*/
+.form-contenedor{
+    background-image: url(../images/img-formulario.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-contenedor .form{
+    background-color: #ffffffc9;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+.form-label {
+    margin-top: 1em;
+    display: flex;
+}
+
+.form-label label{
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+}
+.form-label input{
+    width: 80%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #000;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+}
+
+.form-btn{
+    margin-top: 1rem;
+    width: 80%;
+    height: 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+.form-btn:hover{
+    background-color: orange;
+}
+
+/*------------- SUCURSALES---------------*/
+.suc-titulo{
+    text-align: center;
+}
+.sucursales{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.suc-contenedor{
+    text-align: center;
+    width: 40%;
+    margin: 1rem;
+    overflow: hidden;
+    border:solid black 1px;
+    border-radius: 10px;;
+
+    box-shadow: .5rem .5rem 16px #696969;
+}
+iframe {
+    width: 40rem;
+    height: 255px;
+    border: none;
+}
+
+/*-------------------RECETAS---------------------*/
+
+.receta-prep section{
+    border:solid black 1px;
+    border-radius: 10px;
+    padding: 1rem;
+    min-width: 20rem;
+}
+.receta-prep{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+/*.receta-prep section{
+    box-shadow: 5px 5px 16px black ;
+}*/
+.prep{
+    text-align: center;
+}

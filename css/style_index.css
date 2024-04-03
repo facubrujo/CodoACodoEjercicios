@@ -1,0 +1,77 @@
+html, body{
+    width:100%;
+    overflow-x: hidden;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tarjetas{
+    background-color: aliceblue;
+    height: 40%;
+    width: 30%;
+    margin: 0.5rem;;
+    border: solid black 1px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+
+    box-shadow: .5rem .5rem 16px #696969;
+}
+.tarjetas a{
+    text-decoration: none;
+}
+.tarjetas:hover{
+    transform: scale(1.1);
+    z-index: 20;
+}
+.tarjetas .img{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.tarjetas .img img{
+    width: 100%;
+    height: auto;
+}
+.tarjetas .titulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1720px){
+    .menu{
+        padding-top: 4rem;
+    }
+    .tarjetas{
+        /*filas de 3 tarjeta en pantalla*/
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    .menu{
+        padding-top: 1px;
+    }
+    .tarjetas{
+        /*filas de 2 tarjeta en pantalla*/
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .menu{
+        padding-top: 1px;
+    }
+    .tarjetas{
+        /*filas de 1 tarjeta en pantalla*/
+        width: 90%;
+    }
+}
+

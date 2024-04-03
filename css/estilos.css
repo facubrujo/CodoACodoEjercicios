@@ -1,0 +1,121 @@
+/*variables*/
+:root{
+    --color-fondo-header: orange;
+    --color-texto:#000;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.main{
+    flex:1;
+}
+.header{
+    background-color: var(--color-fondo-header);
+    height: 4rem;
+    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    flex:1;
+} 
+.header a{
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    
+    
+}
+.footer{
+    background-color: var(--color-fondo-header);
+    margin-top:2rem;
+    height: 4rem;
+    padding-top: 4%;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.menu{
+    display: flex;
+}
+
+.tarjetas{
+    background-color: aliceblue;
+    text-align: center;
+    width: 30%;
+    margin: 0.5rem;;
+    border: solid black 1px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.tarjetas:hover{
+    transform: scale(1.1);
+    z-index: 20;
+}
+.tarjetas a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 375px){
+    .header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;       
+    }
+
+    .nav .a{
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tarjetas{
+        width: 80%;
+    }
+
+}
+@media only screen and (max-width: 720px){
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tarjetas{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1280px){
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 1281px){
+    
+    
+    
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
